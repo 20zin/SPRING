@@ -9,3 +9,9 @@
 3.map ,collect????  
 4.properties.yml(spring boot)에 h2-db연결(1회성db확인용) + jdbc:h2:mem:yeongjin으로 url할당 + localhost:8080/posts에 리스트형태로 db저장확인  
 
+2023.4.30  
+게시글 조회 -> 페이징 처리
+<핵심>  
+조회하는 글이 너무 많다면? 1.DB가 뻗을수있다 2.애플리케이션으로 전달하는 시간,트래픽비용이 많이 발생할수있다.  
+1.페이징처리 -> pageable pageRequest.of()메소드를 통해 페이징처리 자동실행  
+2.페이징처리할때 getList 1페이지 요청시 ->파라미터를 0으로 받아온다 내부적으로 0으로 자동 매핑!  
