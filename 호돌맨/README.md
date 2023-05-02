@@ -21,3 +21,12 @@
 Dependency설정 및 bulid.gralde class에 set설정 완료 -> generated에 Qpost클래스 설정  
 1.postrepository implements설정완료
 
+### 2023.05.02
+게시글 수정  
+현재 CRUD중 create와 read는 작업완료하였고 update해야겠쥬?(intellij 자동줄맞춤 c+s+a+l)   
+Postcreate와 PostEdit의 빌드 구조가 똑같다고 해서 하나로 퉁쳐서 데이터보내겠다고 생각하면 큰일남!!  
+1.posteditor생성(어려운부분) -> postservice test진행시 제목과 콘텐츠중 하나만 수정하고 싶어서 바꾸고 다른건 클라이언트가 null로 보내게되면  
+기존의 db에 저장된 바뀌지않는부분을 저장된 상태를 그대로 넘겨줘야하는데 posteditor객체를 생성하지않았다면 edit객체에 일일이 명시해줘야한다  
+
+
+
