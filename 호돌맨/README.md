@@ -28,5 +28,20 @@ Postcreate와 PostEdit의 빌드 구조가 똑같다고 해서 하나로 퉁쳐�
 1.posteditor생성(어려운부분) -> postservice test진행시 제목과 콘텐츠중 하나만 수정하고 싶어서 바꾸고 다른건 클라이언트가 null로 보내게되면  
 기존의 db에 저장된 바뀌지않는부분을 저장된 상태를 그대로 넘겨줘야하는데 posteditor객체를 생성하지않았다면 edit객체에 일일이 명시해줘야한다  
 
+게시글 삭제  
+postservice에서 존재하는 경우와 존재하지않는 경우를 분리해서 메소드를 생성한다!!  
+
+### 2023.05.03
+예외처리 1  
+Illegalargmentexception.class는 assertthrow에서 예상되는 문자까지 넘겨줘야하는데 postnotfound메소드를 response에 달아주면 그냥 찾지 못한다는 사실을 넘김  
+PostNotFound는 자바에서 제공해주지 않기때문에 package 따로 생성  
+
+예외처리 2  
+HTTPstatuscode들의 종류별로 예외처리!!(추가적인 공부필요)  
+페이지 예외처리에대한 클래스를 일일이 만들면 너무 힘들다... ->통합적인 클래스를 생성!!(abstract)  
+그렇다면 execption에해당하는 statuscode가 다 다르잖아? 그러면 어떡해? -> exception종류에따라 물어보는것이 간편!
+
+
+
 
 
