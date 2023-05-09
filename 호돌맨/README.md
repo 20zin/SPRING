@@ -42,8 +42,14 @@ HTTPstatuscode들의 종류별로 예외처리!!(추가적인 공부필요)
 그렇다면 execption에해당하는 statuscode가 다 다르잖아? 그러면 어떡해? -> exception종류에따라 물어보는것이 간편!  
 
 ### 2023.05.08
-배포  
+1.배포  
 프로세스 자동화!! 클라우드 서비스 -> 확장성  
+/gradlew build -> jar파일 생성 -> 개발서버에 던져줌/ 사용할 파일은 bootjar이므르로 build.gradle에서 enabled=true설정 / 일반jar는 enabled=false  
+2.AWS EC2생성
+
+
+### 2023.05.09  
+
 
 
 
