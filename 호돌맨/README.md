@@ -52,7 +52,8 @@ HTTPstatuscode들의 종류별로 예외처리!!(추가적인 공부필요)
 CORS문제 해결 + 글 작성화면 만들기  
 
 ### 2023.05.15  
-npm run dev
+npm run dev  
+proxy 설정 및 axios문제 해결(서버 + 클라이언트) + 블로그 화면 제작까지 완성 
 
 
 
