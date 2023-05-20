@@ -68,6 +68,16 @@ webmvc config 클래스를 따로 만들어 authintercepter를 매개변수로 �
 인증이 불필요한 루트에는 webmvconfig에 excludePathPatterns로 경로명추가  
 
 ArgumentResolver  
+webRequest.getparameter로 accesstoken을 가져와서 인증이 필요한 path를 설정  
+충돌발생가능성도 있다  
+
+Header로 인증할 필요!  
+getheader로 변경 / intellij에서 제공하는 테스트 요청도 있다(directory 생성)  
+/**
+  GET http://localhost:8080/foo
+  content-type:application/json
+  Authorization: asdf
+*/
 
 
 
