@@ -53,7 +53,15 @@ CORS문제 해결 + 글 작성화면 만들기
 
 ### 2023.05.15  
 npm run dev  
-proxy 설정 및 axios문제 해결(서버 + 클라이언트) + 블로그 화면 제작까지 완성 
+proxy 설정 및 axios문제 해결(서버 + 클라이언트) + 블로그 화면 제작까지 완성  
+
+### 2023.05.20  
+기장 기본적인 인증요청방법  
+1.get parameter 2.post(body)value 3.header 2번은 그닥 좋지않은방법론  
+1번으로는 controller에 requestparam으로 인증을 요구  
+3번은 관리자만 가능한 부분에 requesheader부분에 추가 하면 된다  
+하지만 이걸 매번 api에 추가해줘야 한다면 불효율적이다  
+intercepter활용하기
 
 
 
