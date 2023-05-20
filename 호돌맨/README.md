@@ -61,7 +61,14 @@ proxy 설정 및 axios문제 해결(서버 + 클라이언트) + 블로그 화면
 1번으로는 controller에 requestparam으로 인증을 요구  
 3번은 관리자만 가능한 부분에 requesheader부분에 추가 하면 된다  
 하지만 이걸 매번 api에 추가해줘야 한다면 불효율적이다  
-intercepter활용하기
+
+intercepter활용하기  
+webmvc config 클래스를 따로 만들어 authintercepter를 매개변수로 할당하고 prehandler에 accesstoken을 매개변수로 준다  
+조건에 맞으면 보여주고 아니면 Unauthorized() 예외처리 클래스로 던져준다 (인증안된 statuscode -> 401)  
+인증이 불필요한 루트에는 webmvconfig에 excludePathPatterns로 경로명추가  
+
+ArgumentResolver  
+
 
 
 
