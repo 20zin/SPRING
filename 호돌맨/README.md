@@ -77,7 +77,11 @@ getheader로 변경 / intellij에서 제공하는 테스트 요청도 있다(dir
   GET http://localhost:8080/foo
   content-type:application/json
   Authorization: asdf
-*/
+*/  
+### 2023.05.21  
+로그인 인증기능 컨트롤러와 request객체 생성  
+세션발급및 레포지토리와 서비스layer에서 해결 및 테스트코드 작성
+
 
 
 
