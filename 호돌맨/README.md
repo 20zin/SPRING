@@ -96,7 +96,7 @@ yml -> @configurationproperties(prfix="") / application에는 enableconfiguratio
 
 
 회원가입 기능  
-autoservicetest
+autoservicetest + 이메일 중복체크 exception 생성 + request dto
 
 
 
