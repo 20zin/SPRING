@@ -92,6 +92,11 @@ SessionRespose에 스트링갑을 넣어서 클라이언트한테 던져줌(암�
 auth.http에서 로그인요청 -> jwt토큰발급 -> post.http에서 특정사이트 방문시 헤더(Authorization)에 있는 토큰을 확인후 인증완료  
 
 yml -> @configurationproperties(prfix="") / application에는 enableconfiguration어노테이션 추가!!  
+암호키를 객체로 새로만들어서 getter setter로 authresolver와 authcontroller에 사용한다 
+
+
+회원가입 기능  
+autoservicetest
 
 
 
