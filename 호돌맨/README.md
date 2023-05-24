@@ -80,8 +80,12 @@ getheader로 변경 / intellij에서 제공하는 테스트 요청도 있다(dir
 */  
 ### 2023.05.21  
 로그인 인증기능 컨트롤러와 request객체 생성  
-세션발급및 레포지토리와 서비스layer에서 해결 및 테스트코드 작성
+세션발급및 레포지토리와 서비스layer에서 해결 및 테스트코드 작성  
 
+### 2023.05.24  
+jwt활용  
+SecretKey key = Jwts.SIG.HS256.keyBuilder().build();  
+String jws = Jwts.builder().setSubject("Joe").signWith(key).compact();
 
 
 
