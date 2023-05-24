@@ -85,7 +85,14 @@ getheader로 변경 / intellij에서 제공하는 테스트 요청도 있다(dir
 ### 2023.05.24  
 jwt활용  
 SecretKey key = Jwts.SIG.HS256.keyBuilder().build();  
-String jws = Jwts.builder().setSubject("Joe").signWith(key).compact();
+String jws = Jwts.builder().setSubject("Joe").signWith(key).compact();  
+header/payload/signature로 hsa알고리즘으로 암호화  
+SessionRespose에 스트링갑을 넣어서 클라이언트한테 던져줌(암호화)  
+여기서 key값이 중요(payload)부분  
+auth.http에서 로그인요청 -> jwt토큰발급 -> post.http에서 특정사이트 방문시 헤더(Authorization)에 있는 토큰을 확인후 인증완료  
+
+yml -> @configurationproperties(prfix="") / application에는 enableconfiguration어노테이션 추가!!  
+
 
 
 
