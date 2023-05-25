@@ -102,7 +102,19 @@ autoservicetest + 이메일 중복체크 exception 생성 + request dto
 비밀번호 암호화  
 1.해시 / 해시알고리즘(sha1,sha256,md5)/왜이걸로 암호하를 하면안되는지/ bcrypt,scrypt,argon2  
 salt값 존재/해시값은 salt값이 존재 -> 인풋값이 같다면 아웃풋도 동일하다...이러면 안되지!!  
-spring security crypto라이브러리 설치
+spring security crypto라이브러리 설치  
+
+### 2023.05.26  
+테스트용암호화클래스랑 운영용암호화클래스 분리  
+테스트용(평문암호화) vs 운영용(Scrypt)  
+#### Spring Security  
+그전에 build.gradle(spring-boot 3.0.5)기준으로 querydsl설정 및 jpa버전 바꿔줌  
+(참고:https://hodolman.com/54)  
+spring security를 build하면 처음에 로그인 페이지가 뜰것이다(당황...mapping도 안햇는데???) -> 8080자체에 대한 인증이 필요하기 때문에 바로 login페이지를 응답하게 된다 즉 8080자체에도 인증이 필요함  
+기본id는 user / password는 어플리케이션 실행시 뜨는 로그 -> 쿠키가 던져짐(사용자인증) 없으면 다시 로그인 페이지로!  
+securityconfig 클래스 생성후 SecurityFilterChain생성 csrf설정(사이트간 요청위조) -> 폼 커스텀 조정까지!!(remember me로 기한조정과 자동로그인설정->세션을 유한기간만큼 기억하고 있다가 지나면 로그인페이지로 넘어감)  
+세션시간조절(yml에서 조정)  
+관리자랑 사용자 페이지 따로 구분까지!!
 
 
 
