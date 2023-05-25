@@ -96,7 +96,12 @@ yml -> @configurationproperties(prfix="") / application에는 enableconfiguratio
 
 
 회원가입 기능  
-autoservicetest + 이메일 중복체크 exception 생성 + request dto
+autoservicetest + 이메일 중복체크 exception 생성 + request dto  
+
+### 2023.05.25  
+비밀번호 암호화  
+1.해시 / 해시알고리즘(sha1,sha256,md5)/왜이걸로 암호하를 하면안되는지/ bcrypt,scrypt,argon2
+
 
 
 
