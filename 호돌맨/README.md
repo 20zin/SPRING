@@ -100,7 +100,9 @@ autoservicetest + 이메일 중복체크 exception 생성 + request dto
 
 ### 2023.05.25  
 비밀번호 암호화  
-1.해시 / 해시알고리즘(sha1,sha256,md5)/왜이걸로 암호하를 하면안되는지/ bcrypt,scrypt,argon2
+1.해시 / 해시알고리즘(sha1,sha256,md5)/왜이걸로 암호하를 하면안되는지/ bcrypt,scrypt,argon2  
+salt값 존재/해시값은 salt값이 존재 -> 인풋값이 같다면 아웃풋도 동일하다...이러면 안되지!!  
+spring security crypto라이브러리 설치
 
 
 
